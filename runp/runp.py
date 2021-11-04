@@ -12,7 +12,7 @@ def filter_vars(imported_vars):
         name, obj = tup
         if callable(obj) and not name.startswith('_'):
             if inspect.isclass(obj):
-                methods = inspect.getmembers(obj(), predicate=inspect.ismethod)
+                methods = inspect.getmembers(obj, predicate=inspect.ismethod)
                 for name, method in methods:
                     if not name.startswith('_'):
                         functions[obj.__name__ + "." + name] = method
