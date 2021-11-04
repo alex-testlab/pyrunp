@@ -82,7 +82,7 @@ def get_function(functions, function_name):
 
 def print_functions(functions):
     print("Available functions:")
-    for fname, function in functions.iteritems():
+    for fname, function in functions.items():
         doc = get_docstring(function, abbrv=True)
         print(fname + "\t" + doc)
 
