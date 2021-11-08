@@ -25,6 +25,8 @@ def load_runfile(runfile):
     importer = __import__
     directory, runfile = os.path.split(runfile)
 
+    os.chdir(directory)
+
     sys.path.insert(0, directory)
     imported = importer(os.path.splitext(runfile)[0])
     del sys.path[0]
