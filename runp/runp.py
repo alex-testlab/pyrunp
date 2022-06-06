@@ -8,11 +8,10 @@ import pydoc
 
 def filter_vars(imported_vars):
     functions = {}
-    for tup in imported_vars:
-        name, obj = tup
+    for name, obj in imported_vars:
         if callable(obj) and not name.startswith('_'):
             if inspect.isclass(obj):
-                methods = inspect.getmembers(obj, predicate=inspect.ismethod)
+                methods = inspect.getmembers(obj(), predicate=inspect.ismethod)
                 for name, method in methods:
                     if not name.startswith('_'):
                         functions[obj.__name__ + "." + name] = method
