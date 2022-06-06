@@ -64,10 +64,9 @@ def parse_args(cmd):
 
 
 def get_docstring(function, abbrv=False):
-    try:
-        doc = inspect.getdoc(function)
-        if abbrv and doc is not None:
-            doc = doc.splitlines()[0].strip()
+    doc = inspect.getdoc(function)
+    if abbrv and doc is not None:
+        doc = doc.splitlines()[0].strip()
     else:
         doc = ""
     return doc
