@@ -21,8 +21,8 @@ class RunPTestCase(unittest.TestCase):
     def test_print_functions(self):
         out = """Available functions:
 Wip.print_it\t
-wat\tWEEE
 wet\t
+wat\tWEEE
 wut\tSuper docstring test"""
         runp.print_functions(self.functions)
         output = sys.stdout.getvalue().strip()
