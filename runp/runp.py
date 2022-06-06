@@ -105,7 +105,7 @@ def run_function(functions, cmd):
         if func:
             func(*args, **kwargs)
     except TypeError as e:
-        print(e.message)
+        print(e.args[0])
 
 
 def main():
