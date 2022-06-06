@@ -13,8 +13,10 @@ You don't need to change your existing code.
 
 install::
 
+    # install from pip
     pip install pyrunp
 
+    #download souce code and install by command 
     python setup.py install
 
 If you have a file named myfile.py with::
