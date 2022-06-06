@@ -86,7 +86,7 @@ def print_functions(functions):
     print("Available functions:")
     for fname, function in functions.items():
         doc = get_docstring(function, abbrv=True)
-        print(fname + "\t" + doc)
+        print(fname + "\t" + doc if doc is not None else "")
 
 
 def print_function(functions, function):
