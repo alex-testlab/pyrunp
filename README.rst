@@ -61,3 +61,5 @@ Syntax for calling functions is::
 
 
 The concept, syntax for commands and initial code are heavily inspired by fabric's task system.
+
+Wiki:https://github.com/alex-testlab/pyrunp.wiki.git
