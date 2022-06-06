@@ -11,6 +11,12 @@ runp
 runp exports Python functions from files to the command line. 
 You don't need to change your existing code.
 
+install::
+
+    pip install pyrunp
+
+    python setup.py install
+
 If you have a file named myfile.py with::
 
     def foo():
