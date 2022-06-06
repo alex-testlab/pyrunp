@@ -74,7 +74,7 @@ wut(text, woop=False)
         self.assertEquals(str(output), out)
 
     def test_run_function_wrong_args(self):
-        out = "wut() takes at least 1 argument (0 given)"
+        out = "wut() missing 1 required positional argument: 'text'"
         runp.run_function(self.functions, "wut")
         output = sys.stdout.getvalue().strip()
         self.assertEquals(str(output), out)
