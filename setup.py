@@ -9,7 +9,7 @@ long_description = readme
 
 setup(
     name='runp',
-    version='0.0.2',
+    version='0.0.3',
     description='runp exports Python functions from files to the command line',
     long_description=long_description,
     author='Vasco Pinho',
