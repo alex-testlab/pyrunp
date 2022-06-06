@@ -16,7 +16,7 @@ class RunPTestCase(unittest.TestCase):
         self.assertTrue(len(self.imported_vars) >= len(self.functions))
 
     def test_filter_vars(self):
-        self.assertEquals(len(self.functions), 3)
+        self.assertEquals(len(self.functions), 4)
 
     def test_print_functions(self):
         out = """Available functions:
